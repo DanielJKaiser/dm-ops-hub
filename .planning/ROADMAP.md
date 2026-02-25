@@ -28,12 +28,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Claude can call a Google Sheets MCP tool in a session and append a test row to the Bookings Tracker
   3. The Bookings Tracker Google Sheet exists with all required columns (ID through Completeness %) and correct data validation dropdowns for Status
   4. No secrets exist in the git repository — .env holds credentials, .gitignore excludes them, mcp-config-example.json is committed with placeholders
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 01-01: Azure App Registration and Google Cloud project setup
-- [ ] 01-02: MCP server installation and authentication verification
-- [ ] 01-03: Bookings Tracker schema creation and security baseline
+- [ ] 01-01-PLAN.md — Azure App Registration, Google Cloud project, security baseline files, and credential management
+- [ ] 01-02-PLAN.md — Google Sheets MCP installation and verification, Outlook MCP config for work laptop
+- [ ] 01-03-PLAN.md — Bookings Tracker spreadsheet creation with full schema, data validation, and conditional formatting
 
 ### Phase 2: Polling Script and Data Model
 **Goal**: Emails are captured continuously via a background poller and written to the Inbox Queue — Claude has a queue to drain when a session starts, and the data model is locked before any booking writes occur
