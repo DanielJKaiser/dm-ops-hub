@@ -1,0 +1,40 @@
+# Secrets
+.env
+.env.local
+.env.production
+
+# Google service account keys
+service-account-key.json
+*-service-account*.json
+*-credentials*.json
+
+# MCP config (actual — contains real paths and secrets)
+claude_desktop_config.json
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# State files (polling script)
+state.json

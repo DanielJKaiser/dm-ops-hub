@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "outlook": {
+      "command": "node",
+      "args": ["C:/path/to/outlook-mcp/index.js"],
+      "env": {
+        "OUTLOOK_CLIENT_ID": "YOUR_AZURE_CLIENT_ID",
+        "OUTLOOK_CLIENT_SECRET": "YOUR_AZURE_CLIENT_SECRET"
+      }
+    },
+    "google-sheets": {
+      "command": "uvx",
+      "args": ["mcp-google-sheets@latest"],
+      "env": {
+        "SERVICE_ACCOUNT_PATH": "C:/path/to/service-account-key.json",
+        "DRIVE_FOLDER_ID": "YOUR_DRIVE_FOLDER_ID"
+      }
+    }
+  }
+}
